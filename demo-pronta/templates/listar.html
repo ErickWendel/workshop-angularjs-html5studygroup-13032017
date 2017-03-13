@@ -3,7 +3,7 @@
         <a ng-click="vm.selecionado = $index" class="list-group-item" ng-class="{'active': $index == (vm.selecionado  || 0) }">
             <h4 class="list-group-item-heading">{{amigo.nome}}</h4>
             <p class="list-group-item-text">{{amigo.telefone}}</p>
-            <p class="list-group-item-text">{{amigo.dataNascimento | date: ddMMyyyy}}</p>
+            <p class="list-group-item-text">{{amigo.dataNascimento}}</p>
             <p class="list-group-item-text">{{amigo.cpf}}</p>
         </a>
         <br />
