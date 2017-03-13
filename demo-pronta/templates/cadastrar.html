@@ -1,0 +1,36 @@
+<form class="form" name="meuForm" ng-submit="vm.cadastrar()">
+    <br />
+    <fieldset>
+        <legend>Cadastro de Amigos</legend>
+        <div class="form-group">
+            <label for="">Nome</label>
+            <input type="text" ng-model="vm.amigo.nome" name="nome" placeholder="Digite seu nome" required class="form-control">
+            <div ng-messages="meuForm.nome.$error">
+                <div class="text-danger" ng-message="required">O nome é obrigatorio</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Telefone</label>
+            <input type="tel" ng-model="vm.amigo.telefone" name="telefone" placeholder="Digite seu Telefone" required class="form-control">
+            <div ng-messages="meuForm.telefone.$error">
+                <div class="text-danger" ng-message="required">O telefone é obrigatorio</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">CPF</label>
+            <input type="text"ng-model="vm.amigo.CPF" name="cpf" placeholder="Digite seu CPF" required class="form-control">
+            <div ng-messages="meuForm.cpf.$error">
+                <div class="text-danger" ng-message="required">O cpf é obrigatorio</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Data Nascimento</label>
+            <input type="date" ng-model="vm.amigo.dataNascimento" name="dataNascimento" required placeholder="Digite seu Data Nascimento" class="form-control">
+            <div ng-messages="meuForm.dataNascimento.$error">
+                <div class="text-danger" ng-message="required">A data de nascimento é obrigatoria</div>
+            </div>
+        </div>
+    </fieldset>
+    <input type="submit" value="Cadastrar" class="btn btn-success"/>
+    <input type="reset" value="Limpar" class="btn btn-danger"/>
+</form>

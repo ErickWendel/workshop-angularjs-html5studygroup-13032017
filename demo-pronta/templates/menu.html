@@ -1,0 +1,11 @@
+<ul class="nav nav-tabs ">
+  
+  <li role="presentation" ng-class="{'active': vm.tabAtiva('home')}" ><a href="#">Home</a></li>
+  <li role="presentation" ng-class="{'active': vm.tabAtiva('cadastrar')}">
+      <a ui-sref="app.cadastrar">Cadastrar</a>
+  </li>
+  <li role="presentation" ng-class="{'active': vm.tabAtiva('listar')}">
+      <a ui-sref="app.listar">Listar</a>
+  </li>
+</ul>
+  <div ui-view></div>

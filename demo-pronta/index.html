@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>My Angular APP</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="app/routes.js"></script>
+        <script src="app/controllers.js"></script>
+        <script src="app/services.js"></script>
+        <script src="app/app.js"></script>
+    </head>
+    <body ng-app="app">
+       <div class="container-fluid">
+           <div ui-view></div>
+       </div>
+       <!--<div ui-view="app"></div>-->
+       <!--<ui-view></ui-view>-->
+    </body>
+</html>
